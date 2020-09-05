@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
+
+  <!-- title icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+ 
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ 
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- script js -->
+  <script src="script.js" defer></script>
+  
+  <title>Pricing Component with Toggle</title>
+
+</head>
+
+<body>
+  <section>
+    <div class="container pt-4 text-center">
+      <h1>Our Pricing</h1>
+
+      <div class="toggle-container">
+        <span>Annually</span>
+        <span>
+          <input type="checkbox" name="toggle" id="toggle"> 
+          <label for="toggle">
+            <div class="toggle-ball"></div>
+          </label>       
+        </span>
+        <span>Monthly</span>
+      </div>
+
+      <div id="slide" class="flex">
+        <div class="box">
+          <h4>Basic</h4>
+          <p>
+            <span class="Monthly">&dollar;19.99</span>
+            <span class="Annually">&dollar;199.99</span>
+          </p>
+          <ul>
+            <li>500 GB Storage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3GB</li>
+          </ul>
+          <button>Learn More</button>
+        </div>
+
+        <div class="box box-active">
+          <h4>Professional</h4>
+          <p>
+            <span class="Monthly">&dollar;24.99</span>
+            <span class="Annually">&dollar;249.99</span>
+          </p>
+          <ul>
+            <li>1 TB Storage</li>
+            <li>5 Users Allowed</li>
+            <li>Send up to 10GB</li>
+          </ul>
+          <button>Learn More</button>
+        </div>
+
+        <div class="box">
+          <h4>Master</h4>
+          <p>
+            <span class="Monthly">&dollar;39.99</span>
+            <span class="Annually">&dollar;399.99</span>
+          </p>
+          <ul>
+            <li>2 TB Storage</li>
+            <li>10 Users Allowed</li>
+            <li>Send up to 20GB</li>
+          </ul>
+          <button>Learn More</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+</body>
+</html>
